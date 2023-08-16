@@ -1,0 +1,373 @@
+*{
+    box-sizing: border-box;
+}
+
+.titles {
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+header {
+    backdrop-filter: blur(4px);
+    min-height: 80px;
+    background: rgba(255, 255, 255, 0.669);
+    top: 0;
+    left: 0;
+    position:sticky;
+    z-index: 9999;
+    -webkit-box-shadow: 3px 3px 10px 3px #000000;
+    box-shadow: 3px 3px 10px 3px #000000;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header .logo .btn img {
+    transition: 500ms;
+}
+
+header .logo .btn img:hover {
+    transform: scale(1.25);
+    color: white;
+}
+
+.btn:active {
+    border: none;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul a {
+    color: black;
+    text-decoration: none;
+    padding: 0 12px;
+    font-size: 1.25em;
+    transition: 800ms;
+    margin: 0 auto;
+    display: block;
+}
+
+header nav ul a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    transform: scale(1.25)
+}
+
+.strip img {
+    display: none;
+    max-width: 100%;
+}
+
+.strip .carousel .bg_slide {
+    background-size: cover;
+    background-position: center;
+    min-height: 730px;
+}
+
+.strip .carousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.493);
+    max-width: 500px;
+    margin: 0 auto;
+    /* -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #3e3e3ec4; */
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+}
+
+main {
+    padding: 11px;
+    background: rgb(255, 255, 255);
+}
+
+main .part1 .up {
+    margin: 48px;
+}
+
+main .part1 .up h1 {
+    font-size: 4.5em;
+    /* text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8; */
+}
+
+main .part1 .up h3 {
+    font-size: 1.5em;
+    /* text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8; */
+}
+
+main .part1 .row .boxNY{
+    background-image: url(images/newYork.jpg);
+}
+
+main .part1 .row .boxLA{
+    background-image: url(images/losAngeles.jpg);
+}
+
+main .part1 .row .boxSF{
+    background-image: url(images/sanfrancisco.jpg);
+}
+
+
+main .part1 .row .box {
+    min-height: 550px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px 5px #000000;
+
+}
+
+main .part1 .row .box .layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20;
+    left: 0;
+    transition: all 0.3s;
+}
+
+main .part1 .row .box .layer .textF {
+    display: none;
+}
+
+main .part1 .row .box .layer:hover .textF {
+    display: block;
+}
+
+
+main .part1 .row .box .icon {
+    z-index: 9999;
+    
+}
+
+/* main .part1 .row .box h2{
+    background: rgba(0, 0, 0, 0.471);
+} */
+
+main .part1 .row .box p {
+    background: rgba(0, 0, 0, 0.471);
+    
+
+}
+
+/* main .part2 .tShadow {
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+} */
+
+main .part2 .row .box2 {
+    min-height: 250px;
+    min-width: 250px;
+    border-radius: 1500px;
+    transition: 300ms;
+    display: block;
+    color: white;
+    background: rgb(0, 0, 0);
+
+}
+
+
+main .part2 .row .box2:hover {
+    transform: scale(0.85);
+    box-shadow: 5px 5px 10px 5px #38383881;
+}
+
+main .container2{
+    max-width:1300px ;
+    margin:0 auto;
+    /* border: 1px solid green; */
+}
+
+/* main .part3{
+    margin:0; 
+} */
+
+/* main .part3 h4{
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+} */
+
+main .part3 .box3{
+    background: rgba(251, 226, 178, 0.521);
+    border-radius: 10px;
+    /* border: 1px solid green; */
+    box-sizing: border-box;
+}
+
+main .part3 .box3 .left img{
+    border-radius: 100px;
+}
+main .part3 .box3 h5{
+    font-weight: bold;
+}
+main .part3 .box3 p{
+    font-size: 1.1em;
+}
+
+footer {
+    background: rgb(56, 60, 61);
+    box-shadow: 5px 5px 15px 5px #000000;
+    min-height: 110px;
+}
+
+footer .row{
+    flex-direction: column;
+}
+
+footer .row .left h3 {
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer .row .right {
+    min-width: 100px;
+}
+
+footer .row .right a {
+    color: #ffffff;
+    font-size: 1.5em;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 500px;
+    transition: 800ms;
+}
+
+footer .row .right a:hover{
+    transform: scale(1.2);
+    border:1px solid #ffffff;
+}
+
+@media (max-width: 991px) {
+    header .row nav {
+        display: none;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.925);
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+        /* backdrop-filter: blur(4px); */
+
+    }
+
+    header nav ul a {
+        display: block;
+        padding: 12px 8px;
+        /* border-bottom:1px solid grey ; */
+    }
+
+    header nav ul a:hover {
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+        transform: scale(1.25);
+
+    }
+
+    .strip img {
+        display: block;
+    }
+
+    .strip .carousel {
+        display: none;
+    }
+
+    main .part1 .up h1 {
+        font-size: 3.2em;
+    }
+
+    main .part1 .up h3 {
+        font-size: 1.5em;
+    }
+
+    main .part1 .row .box .layer .textF {
+        display: block;
+    }
+
+    main .part1 .row .boxNY{
+        background-image: url(images/newYorkV.jpg);
+    }
+
+    main .part1 .row .boxLA{
+        background-image: url(images/losAngelesV.jpg);
+    }
+
+    main .part1 .row .boxSF{
+        background-image: url(images/sanfranciscoV.jpg);
+    }
+
+    main .part1 .row .bigBox{
+        width: 100%;
+    }
+
+    main .part2 .row .box2 {
+        min-height: 200px;
+        min-width: 200px;
+        gap: 3;
+    
+    }
+
+    main .part2 .row .box2 h4{
+        font-size: 1.2em;
+    }
+
+    /* main .container2{
+        width: 100%;
+    } */
+
+}
+
+@media (max-width:576px) {
+
+    main .container .part1 {
+        justify-content: center;
+    }
+
+    main .part1 .up {
+        /* margin:0 auto; */
+        margin-top: 16px;
+
+    }
+
+    main .part1 .up h1 {
+        font-size: 2em;
+    }
+
+    main .part1 .up h3 {
+        font-size: 1em;
+    }
+
+   
+
+   
+}
+
+@media (max-width:400px) {
+    header .row nav {
+        
+        /* background: rgba(255, 255, 255, 0.848); */
+        
+        backdrop-filter: blur(10px);
+
+    }
+    
+    main .part1 .up {
+        margin-left: 30px;
+        margin-bottom: 4px;
+    }
+
+    main .part1 .up h1 {
+        font-size: 1.5em;
+    }
+
+    main .part1 .up h3 {
+        font-size: 0.8em;
+    }
+
+    main .part1 .row .box p{
+        font-size: 1em;
+    }
+}

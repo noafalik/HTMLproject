@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WelcomeHome</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="js/contact.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo col-9 col-md-auto">
+                    <form action="index.html">
+                        <button class="btn">
+                            <img src="images/iconHome.png" width="110" class="img-fluid" alt="icon">
+                        </button>
+                    </form>
+                </div>
+                <nav id="nav_open" class="col-auto ">
+                    <ul class="list-inline titles d-lg-flex  m-0">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="media.html">MEDIA</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="trivia.html">TRIVIA</a></li>
+                    </ul>
+                </nav>
+                <div id="burger_btn" class="burger col-auto d-lg-none pt-3">
+                    <i class="fa fa-bars h1" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="container">
+            <br>
+
+            <div class="box col-md-8 text-center pb-5">
+                <form id="myForm" class="form titles" action="thankU.html">
+                    <h2 class="titles">CONTACT US</h2>
+                    <p type="Name:"><input type="text" placeholder="Write your name here.." required></input></p>
+                    <p type="Phone number:"><input type="number" placeholder="Enter your phone number.." required></input></p>
+                    <p type="Email:"><input id="id_inputE" type="email" placeholder="Let us know how to contact you back.." required></input>
+                    </p>
+                    <p type="How would you make a difference?" class="titles"></p>
+
+                    <select name="Help">
+                        <option value="adoption">Adoption</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="donate">Donate</option>
+                    </select>
+                    <p type="Message:" style="min-height: 40px;padding: 0;"><textarea
+                            placeholder="What would you like to tell us.." required></textarea></p>
+                    <button type="submit" id="send_btn">Send Message</button>
+                    <div class="down-info">
+                        
+                        <span class="fa fa-phone pe-2"></span>001 1023 567
+                        <span class="fa fa-envelope-o ps-3 pe-1"></span> contact@company.com
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container titles">
+            <div class="row p-3">
+                <div class="box left text-white col-12 text-center">
+                    <h3 class="display-6">Fullstack Web Developer © Noa Falik 2022-2023</h3>
+                </div>
+                <div class="box right text-white col-12 text-center">
+                    <div class="d-flex justify-content-between">
+                        <a href="https://www.facebook.com/TheAnimalClub.net" target="_blank"><i
+                                class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/weloveanimals_newsner?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                                class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/@We_Love_Animals" target="_blank"><i class="fa fa-youtube-play"
+                                aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/We_LoveAnimals_" target="_blank"><i class="fa fa-twitter"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/burger.js"></script>
+</body>
+
+</html>

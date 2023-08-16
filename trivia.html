@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WelcomeHome</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="trivia.css">
+    <script defer src="js/trivia.js"></script>
+</head>
+
+<body onload="NextQuestion(0)">
+    <header class="container-fluid d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo col-9 col-md-auto">
+                    <form action="index.html">
+                        <button class="btn">
+                            <img src="images/iconHome.png" width="110" class="img-fluid" alt="icon">
+                        </button>
+                    </form>
+                </div>
+                <nav id="nav_open" class="col-auto ">
+                    <ul class="list-inline titles d-lg-flex  m-0">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="media.html">MEDIA</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="trivia.html">TRIVIA</a></li>
+                    </ul>
+                </nav>
+                <div id="burger_btn" class="burger col-auto d-lg-none pt-3">
+                    <i class="fa fa-bars h1" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+
+            <div class="modal-content-container">
+
+                <h1>Congratulations, Quiz Completed.</h1>
+
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p><span id="remarks"></span></p>
+                </div>
+
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- end of modal of quiz details-->
+
+        <div class="game-quiz-container">
+
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> / 10</h1>
+                <h1> Question : <span id="question-number"></span> / 10</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <div class="game-options-container">
+
+                <div class="modal-container" id="option-modal">
+
+                    <div class="modal-content-container">
+                        <h1>Please Pick An Option</h1>
+
+                        <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+            </div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container titles">
+            <div class="row p-3">
+                <div class="box left text-white col-12 text-center">
+                    <h3 class="display-6">Fullstack Web Developer © Noa Falik 2022-2023</h3>
+                </div>
+                <div class="box right text-white col-12 text-center">
+                    <div class="d-flex justify-content-between">
+                        <a href="https://www.facebook.com/TheAnimalClub.net" target="_blank"><i
+                                class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/weloveanimals_newsner?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                                class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/@We_Love_Animals" target="_blank"><i class="fa fa-youtube-play"
+                                aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/We_LoveAnimals_" target="_blank"><i class="fa fa-twitter"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/burger.js"></script>
+</body>
+
+</html>

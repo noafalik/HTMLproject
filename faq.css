@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+.titles {
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+header {
+    min-height: 80px;
+    background: rgba(255, 255, 255, 0.669);
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999999999;
+    -webkit-box-shadow: 3px 3px 10px 3px #000000;
+    box-shadow: 3px 3px 10px 3px #000000;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header .logo .btn img {
+    transition: 500ms;
+}
+
+header .logo .btn img:hover {
+    transform: scale(1.25);
+    color: white;
+}
+
+.btn:active {
+    border: none;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul a {
+    color: black;
+    text-decoration: none;
+    padding: 0 12px;
+    font-size: 1.25em;
+    transition: 800ms;
+    margin: 0 auto;
+    display: block;
+}
+
+header nav ul a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    transform: scale(1.25)
+}
+
+main{
+    min-height: 900px;
+    padding-top: 120px;
+    background-image: url("images/faq5.jpg");
+    /* background-position: center; */
+    background-size:cover ;
+    
+}
+
+main h1{
+    background: rgba(255, 255, 255, 0.567);
+    border-radius: 5px ;
+}
+
+main .accordion-header[aria-expanded="true"]{
+    background: rgb(117, 194, 185);
+    
+}
+
+main .accordion-button{
+    background: rgba(108, 158, 155, 0.37);
+}
+
+main .accordion-button[aria-expanded="true"]{
+    background: rgb(87, 144, 138);
+    color: #ffffff;
+    
+}
+
+
+footer {
+    background: rgb(56, 60, 61);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    min-height: 110px;
+}
+
+footer .row {
+    flex-direction: column;
+}
+
+footer .row .left h3 {
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer .row .right {
+    min-width: 100px;
+}
+
+footer .row .right a {
+    color: #ffffff;
+    font-size: 1.5em;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 500px;
+    transition: 800ms;
+}
+
+footer .row .right a:hover {
+    transform: scale(1.2);
+    border: 1px solid #ffffff;
+    
+}
+
+@media (max-width: 991px) {
+    header .row nav {
+        display: none;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.694);
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+        backdrop-filter: blur(3px);
+
+    }
+
+    header nav ul a {
+        display: block;
+        padding: 12px 8px;
+        /* border-bottom:1px solid grey ; */
+    }
+
+    header nav ul a:hover {
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+        transform: scale(1.25);
+
+    }
+
+}

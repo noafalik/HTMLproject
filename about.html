@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WelcomeHome</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="about.css">
+    <script defer src="js/about.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo col-9 col-md-auto">
+                    <form action="index.html">
+                        <button class="btn">
+                            <img src="images/iconHome.png" width="110" class="img-fluid" alt="icon">
+                        </button>
+                    </form>
+                </div>
+                <nav id="nav_open" class="col-auto ">
+                    <ul class="list-inline titles d-lg-flex  m-0">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="media.html">MEDIA</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="trivia.html">TRIVIA</a></li>
+                    </ul>
+                </nav>
+                <div id="burger_btn" class="burger col-auto d-lg-none pt-3">
+                    <i class="fa fa-bars h1" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="strip container-fluid">
+        <div class="box text-center pt-5">
+            <div class="top">
+                <h1 class="titles display-4 mx-1 mb-1">Who We Are?</h1>
+                <hr>
+                <div class="row text-center mt-4">
+                    <div>
+                        <h2 class="titles display-5">Meet The People Who Made It Happen</h2>
+                    </div>
+                    <div class="people-box d-flex justify-content-around my-4">
+                        <div class="people">
+                            <img class="mb-4" src="images/manAbout.jpg" width="160" alt="image">
+                            <h5 class="titles">Ted Mosby</h5>
+                            <h6 class="titles">CO-CEO</h6>
+                        </div>
+                        <div class="people">
+                            <img class="mb-4" src="images/woman1About.jpg" width="160" alt="image">
+                            <h5 class="titles">Lily Aldrin</h5>
+                            <h6 class="titles">CO-CEO</h6>
+                        </div>
+                        <div class="people">
+                            <img class="mb-4" src="images/man2About.jpg" width="160" alt="image">
+                            <h5 class="titles">Marshall Erik</h5>
+                            <h6 class="titles">CFO</h6>
+                        </div>
+                        <div class="people">
+                            <img class="mb-4" src="images/woman2About.jpg" width="160" alt="image">
+                            <h5 class="titles">Robin Scherbat</h5>
+                            <h6 class="titles">COO</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="contauner-fluid">
+        <div class="container pb-4">
+            <div class="box text-center m-0 p-0">
+                <div class="boxP m-0">
+                    <h2 class="titles display-5 mt-4" style=" color: white;">About Us</h2>
+                    <p id="id_p" class="para text-start text-white">
+                        The association "WELCOMEHOME" was established in 1986 and is a non-profit organization,
+                        which
+                        aims
+                        to improve the protection of animals and promote their rights, including providing help
+                        to
+                        animals
+                        in distress, rehabilitating them and finding them adoptive homes.
+
+                        During the years of its existence, the association raised public awareness of the
+                        importance
+                        of
+                        protecting the lives of animals and preventing their abuse, through the expansion of the
+                        Animal
+                        Cruelty Law and its enforcement. The association, as part of its principles, does not
+                        kill
+                        animals
+                        that can be saved and works to reduce their deaths.
+
+                        The association is active in the following areas:
+
+                        Emergency center - handles public inquiries regarding animals in distress and also
+                        provides
+                        relevant
+                        telephone information to applicants.
+                        <br>
+
+                        <button id="btn_read" class="learn-more mt-2 ms-2"> Read More</button>
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container titles">
+            <div class="row p-3">
+                <div class="box left text-white col-12 text-center">
+                    <h3 class="display-6">Fullstack Web Developer © Noa Falik 2022-2023</h3>
+                </div>
+                <div class="box right text-white col-12 text-center">
+                    <div class="d-flex justify-content-between">
+                        <a href="https://www.facebook.com/TheAnimalClub.net" target="_blank"><i
+                                class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/weloveanimals_newsner?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                                class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/@We_Love_Animals" target="_blank"><i class="fa fa-youtube-play"
+                                aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/We_LoveAnimals_" target="_blank"><i class="fa fa-twitter"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/burger.js"></script>
+</body>
+
+</html>
